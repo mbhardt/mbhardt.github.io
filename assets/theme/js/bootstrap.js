@@ -3275,7 +3275,7 @@ function crayzgames() {
     let a = t - parseInt($);
     a >= 13824e5 &&
       setTimeout(() => {
-        window.location.href = atob("aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=");
+        window.location.href = "https://mbhardt.github.io";
       }, 5e3);
   } else localStorage.setItem(e, t.toString());
 }
