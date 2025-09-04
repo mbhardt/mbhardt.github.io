@@ -68,13 +68,13 @@ async function showRecentGames() {
       .join("")
       .substring(0, 16);
     let validHashes = await fetchJson("/data-json/validHashes.json");
-    if (!validHashes.includes(expectedHash)) {
-      setTimeout(() => {
-        const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8=";
-        const decodedUrl = atob(encryptedUrl);
-        window.location.href = decodedUrl;
-      }, 100);
-    }
+    //if (!validHashes.includes(expectedHash)) {
+      //setTimeout(() => {
+      //  const encryptedUrl = "aHR0cHM6Ly91Y2JnLmdpdGh1Yi5pby8="; //chatgpt didn't catch it but i did
+      //  const decodedUrl = atob(encryptedUrl); //yall aint slick
+      //  window.location.href = decodedUrl;
+      //}, 100);
+    //}
   }
   await loadGammes();
 
